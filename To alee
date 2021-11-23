@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Para mi ratita</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: rgb(100, 66, 194);
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Gracias por escogerme, igual ya somos una bonita historia bbé. Igual no puedes presionar el no jajajaja. Te amo mucho mi reina, eres la mejor <3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Quieres seguir siendo parte de esta historia?</h3>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+    <img src="png-transparent-up-youtube-pixar-balloon-up-monsters-inc-youtube-heart-up-walle.png" width="300
+    ">
+    <img src="181dbd807635c71136be462311f5b66c.jpg" width="190
+    ">
+</body>
+</html>
+<style>
+	#btnSi{
+		font-size: 40px;
+	}
+	
+	#btnNo{
+		font-size: 40px;
+	}
+</style>
